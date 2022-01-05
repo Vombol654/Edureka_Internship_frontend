@@ -32,7 +32,7 @@ class Details extends React.Component{
         const qs = queryString.parse(this.props.location.search);
         const{restaurants}=qs;
         axios({
-            url:`http://localhost:8989/restaurant/${restaurants}`,
+            url:`https://first-backend654.herokuapp.com/restaurant/${restaurants}`,
             method:'GET',
             headers: { 'Content-Type': 'application/json' }
         }).then(res =>{
@@ -47,7 +47,7 @@ class Details extends React.Component{
         const { resId } = this.state;
         if (state == "menuItemsModalIsOpen" && value == true) {
             axios({
-                url: `http://localhost:6503/api/getItemsbyrestaurant/${resId}`,
+                url: `https://first-backend654.herokuapp.com/restaurant/${resId}`,
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json' }
             })
@@ -145,7 +145,7 @@ class Details extends React.Component {
         const qs = queryString.parse(this.props.location.search);
         const{restaurants}=qs;
         axios({
-            url:`http://localhost:8989/restaurant/${restaurants}`,
+            url:`https://first-backend654.herokuapp.com/restaurant/${restaurants}`,
             method:'GET',
             headers: { 'Content-Type': 'application/json' }
         }).then(res =>{
@@ -161,7 +161,7 @@ class Details extends React.Component {
         const { resId } = this.state;
         if (state == "menuItemsModalIsOpen" && value == true) {
             axios({
-                url: `http://localhost:8989/menuitems/${resId}`,
+                url: `https://first-backend654.herokuapp.com/menuitems/${resId}`,
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json' }
             })
@@ -235,7 +235,7 @@ class Details extends React.Component {
     }
 
     getData = (data) => {
-        return fetch(`http://localhost:8989/payment`, {
+        return fetch(`https://first-backend654.herokuapp.com/payment`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
