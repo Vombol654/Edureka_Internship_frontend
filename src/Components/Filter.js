@@ -32,7 +32,7 @@ class Filter extends React.Component {
         }
 
         axios({
-            url: 'http://localhost:8989/filter',
+            url: 'https://first-backend654.herokuapp.com/filter',
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
@@ -45,7 +45,7 @@ class Filter extends React.Component {
             console.log(err)
         })
         axios({
-            url: 'http://localhost:8989/locations',
+            url: 'https://first-backend654.herokuapp.com/locations',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         }).then(res => {
@@ -71,7 +71,7 @@ class Filter extends React.Component {
         };
 
         axios({
-            url: 'http://localhost:8989/filter',
+            url: 'https://first-backend654.herokuapp.com/filter',
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
@@ -94,7 +94,7 @@ class Filter extends React.Component {
             page,
         };
         axios({
-            url: 'http://localhost:8989/filter',
+            url: 'https://first-backend654.herokuapp.com/filter',
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
@@ -128,7 +128,7 @@ class Filter extends React.Component {
         };
 
         axios({
-            url: 'http://localhost:8989/filter',
+            url: 'https://first-backend654.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
             data: filterObj
@@ -160,7 +160,7 @@ class Filter extends React.Component {
             page
         };
         axios({
-            url: 'http://localhost:8989/filter',
+            url: 'https://first-backend654.herokuapp.com/filter',
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
@@ -185,7 +185,7 @@ class Filter extends React.Component {
             page:pageNo
         };
         axios({
-            url:'http://localhost:8989/filter',
+            url:'https://first-backend654.herokuapp.com/filter',
             method:'POST',
             headers: {'content-Type':'application/json'},
             data : filterObj
