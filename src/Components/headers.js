@@ -64,7 +64,7 @@ class Header extends React.Component {
             password: password
         }
         axios({
-            url: 'http://localhost:8989/login',
+            url: 'https://first-backend654.herokuapp.com/login',
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             data: req
@@ -103,7 +103,7 @@ class Header extends React.Component {
             lastname
         };
         axios({
-            url: 'http://localhost:8989/signup',
+            url: 'https://first-backend654.herokuapp.com/signup',
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             data: req
